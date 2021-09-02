@@ -19,7 +19,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
          <Head>
             <title>{meta.title}</title>
             <meta name="robots" content="follow, index" />
-            <meta content={meta.description} name="description" />>
+            <meta content={meta.description} name="description" />
             <link rel="canonical" href={`https://andriiwp3.vercel.app${router.asPath}`} />
          </Head>
          <main className="dark:bg-gray-800 w-full">
