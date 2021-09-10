@@ -24,8 +24,7 @@ export default function Hero() {
                   {
                      <RoughNotation color="#FECACA" order="3">
                         <a href={socialLinks.filter(item => item.name === 'Twitter')[0].url} className="font-bold">
-                           {' '}
-                           Twitter{' '}
+                           {' '}Twitter{' '}
                         </a>
                      </RoughNotation>
                   }

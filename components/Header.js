@@ -66,7 +66,9 @@ export default function Example() {
                            <a
                               key={item.name}
                               href={item.url}
-                              className="text-base font-normal text-gray-600 dark:text-gray-300 mr-3 md:hover:opacity-60 duration-200">
+                              className="text-base font-normal text-gray-600 dark:text-gray-300 mr-3 md:hover:opacity-60 duration-200"
+										rel="noreferrer"
+										target="_blank">
                               <svg
                                  xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 16 16"
