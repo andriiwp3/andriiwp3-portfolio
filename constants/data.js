@@ -1,3 +1,11 @@
+import { CashIcon, CalendarIcon, BeakerIcon } from '@heroicons/react/outline';
+
+export const userData = {
+	phone: '+380983194860',
+	email: 'andriiwp3@gmail.com',
+	address: 'Lviv, Ukraine'
+}
+
 export const socialLinks = [
    {
       name: 'Instagram',
@@ -15,9 +23,36 @@ export const socialLinks = [
       path: 'M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z',
    },
 ];
+
 export const navigation = [
-   { name: 'About', href: '/about', current: false },
-   { name: 'Projects', href: '/projects', current: false },
-   { name: 'Experience', href: '/experience', current: false },
-   { name: 'Contact', href: '/contact', current: false },
+   { name: 'Про меня', href: '/about', current: false },
+   { name: 'Проекты', href: '/projects', current: false },
+   { name: 'Опыт', href: '/experience', current: false },
+   { name: 'Связаться', href: '/contact', current: false },
+];
+
+export const githubUser = {
+   username: 'andriiwp3',
+   token: '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',
+};
+
+export const upcomingProjects = [
+   {
+      _id: 1,
+      name: 'Учет Финансов',
+      desc: 'Много людей, в том числе и я, не смогли найти программу для учета финансов, которая была бы настолько гибкой, чтобы удовлетворить все наши требования. Если такой программы нет - пора её создать)',
+      Image: CashIcon,
+   },
+   {
+      _id: 2,
+      name: 'react-calendar',
+      desc: 'Библиотека для работы с календарем на React, а также с класными плюшками в виде удобного таймлайна и возможности записывать свои события',
+      Image: CalendarIcon,
+   },
+   {
+      _id: 2,
+      name: 'Больше проектов на подходе',
+      desc: 'Каждый день я собираю различные идеи для проектов и отбираю из них лучшие, а список всегда будет обновляться сразу по мере того, как идеи будут отбираться',
+      Image: BeakerIcon,
+   },
 ];
