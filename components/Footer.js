@@ -1,4 +1,4 @@
-import { socialLinks, githubUser } from '../constants/data';
+import { userData, githubUser } from '../constants/data';
 
 export default function Footer() {
    return (
@@ -19,9 +19,9 @@ export default function Footer() {
                      Все права защищены.
                   </p>
                </div>
-               {socialLinks && (
+               {userData.socialLinks && (
                   <div className="space-x-4 flex flex-row items-center">
-                     {socialLinks.map(social => (
+                     {userData.socialLinks.map(social => (
                         <a key={social.name} href={social.url} className="text-base font-normal text-gray-600 dark:text-gray-300">
                            <svg
                               xmlns="http://www.w3.org/2000/svg"

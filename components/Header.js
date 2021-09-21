@@ -2,7 +2,7 @@ import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon, ArrowDownIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
-import { socialLinks, navigation } from '../constants/data';
+import { userData, navigation } from '../constants/data';
 
 function classNames(...classes) {
    return classes.filter(Boolean).join(' ');
@@ -62,13 +62,13 @@ export default function Example() {
                         </div>
                      </div>
                      <div className="flex items-center ml-3">
-                        {socialLinks.map(item => (
+                        {userData.socialLinks.map(item => (
                            <a
                               key={item.name}
                               href={item.url}
                               className="text-base font-normal text-gray-600 dark:text-gray-300 mr-3 md:hover:opacity-60 duration-200"
-										rel="noreferrer"
-										target="_blank">
+                              rel="noreferrer"
+                              target="_blank">
                               <svg
                                  xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 16 16"

@@ -1,6 +1,6 @@
 import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 import Image from 'next/image';
-import { socialLinks } from '../constants/data';
+import { userData } from '../constants/data';
 
 export default function Hero() {
    return (
@@ -14,17 +14,17 @@ export default function Hero() {
                   </RoughNotation>{' '}
                </h1>
                <h2 className="text-gray-600 text-sm sm:text-base mb-16 mt-4 font-light tracking-wide leading-normal sm:leading-loose dark:text-gray-400">
-                  Я разработчик, работаю на фриланс-биржах в качестве  &nbsp;
+                  Я разработчик, работаю на фриланс-биржах в качестве &nbsp;
                   <RoughNotation type="highlight" color="#FDE68A" order="2">
                      <span className="dark:text-black whitespace-nowrap px-3"> Frontend Developer. </span>
-                  </RoughNotation> &nbsp;
-						И рад приветствовать вас на моем сайте. Здесь вы найдете всю
-                  профессиональную информацию про меня: рабочий стек, опыт работы, портфолио и многое другое. Я также начинаю
-                  вести
+                  </RoughNotation>{' '}
+                  &nbsp; И рад приветствовать вас на моем сайте. Здесь вы найдете всю профессиональную информацию про меня:
+                  рабочий стек, опыт работы, портфолио и многое другое. Я также начинаю вести
                   {
                      <RoughNotation color="#FECACA" order="3">
-                        <a href={socialLinks.filter(item => item.name === 'Twitter')[0].url} className="font-bold">
-                           {' '}Twitter{' '}
+                        <a href={userData.socialLinks.filter(item => item.name === 'Twitter')[0].url} className="font-bold">
+                           {' '}
+                           Twitter{' '}
                         </a>
                      </RoughNotation>
                   }
