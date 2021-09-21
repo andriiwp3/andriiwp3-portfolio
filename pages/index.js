@@ -1,5 +1,6 @@
+import React from 'react';
 import { githubAPI } from '../api/api';
-import Contact from '../components/ContactForm';
+import ContactBlock from '../components/ContactBlock';
 import ContainerBlock from '../components/ContainerBlock';
 import Hero from '../components/Hero';
 import LatestRepos from '../components/LatestRepos';
@@ -13,7 +14,7 @@ export default function Home({repositories}) {
          <Hero />
 			{repositories && <LatestRepos repositories={repositories} />}
 			<UpcomingList />
-			<Contact />
+			<ContactBlock />
       </ContainerBlock>
    );
 }

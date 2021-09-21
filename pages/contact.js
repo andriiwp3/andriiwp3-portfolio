@@ -1,10 +1,10 @@
 import ContainerBlock from "../components/ContainerBlock";
-import ContactForm from "../components/ContactForm";
+import ContactBlock from "../components/ContactBlock";
 
 export default function Contact() {
 	return (
 		<ContainerBlock>
-			<ContactForm />
+			<ContactBlock />
 		</ContainerBlock>
 	)
 }
